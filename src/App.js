@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import Expenses from './components/Expenses'
 import './Expenses.css'
-import NewExpense from './components/NewExpense'
 import AddExpense from './components/AddExpense'
 const exp = [
   {
