@@ -1,7 +1,7 @@
 import Chart from './Chart'
 function ExpenseChart(props){
 
-    const data=[
+    let data=[
         { label: 'Jan', value:0},
         { label: 'Feb', value:0},
         { label: 'Mar', value:0},
@@ -19,7 +19,7 @@ function ExpenseChart(props){
     for (const expense of props.expenses){
             console.log(expense.amount);
             const expenseMonth=expense.date.getMonth();
-            data[expenseMonth].value+=expense.amount;
+            data[expenseMonth].value+=Number(expense.amount);
             
     };
     console.log(data);
